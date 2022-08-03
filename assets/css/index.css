@@ -1,0 +1,424 @@
+/* BASE CSS */
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: universLTStd, serif;
+  background: #fff;
+  color: #303030;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: 100%;
+}
+
+@font-face {
+  font-family: "universLTStd";
+  src: url("../font/UniversLTStd-Ex.otf");
+}
+@font-face {
+  font-family: "PlantinMTPro";
+  src: url("../font/PlantinMTProRg.TTF");
+}
+/* COMMON CSS */
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.m-auto {
+  margin: 0 auto;
+}
+
+.btn {
+  font-size: 15px;
+  line-height: 32px;
+  font-weight: 400;
+  padding: 10px 18px;
+  letter-spacing: 1.3px;
+  transition: all 0.3s;
+}
+
+.btn-light {
+  border: 1px solid #fff;
+  color: #fff;
+}
+.btn-light:hover {
+  border-color: #303030;
+  background: #303030;
+}
+
+.btn-dark {
+  border: 1px solid #000;
+  color: #000;
+}
+.btn-dark:hover {
+  color: #fff;
+  border-color: #fff;
+  background: #303030;
+}
+
+/* HEADER CSS */
+header {
+  margin-top: 40px;
+}
+header .logo {
+  max-width: 276px;
+  max-height: 25px;
+}
+header li:not(:last-child) {
+  margin-right: 20px;
+}
+header a {
+  color: #303030;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+header a img {
+  width: 12px;
+}
+
+.main-section {
+  margin-top: 120px;
+  margin-bottom: 100px;
+}
+.main-section .row {
+  padding: 0 100px;
+  margin-top: -285px;
+}
+.main-section .main-title {
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.main-section .main-title h3 {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 400;
+}
+.main-section .main-title h1 {
+  font-size: 50px;
+  line-height: 52px;
+  font-weight: 400;
+  font-family: PlantinMTPro, serif;
+  letter-spacing: -1.3px;
+  margin: 16px 0;
+}
+.main-section .main-title p {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  font-family: PlantinMTPro, serif;
+  letter-spacing: -0.5px;
+  margin-bottom: 90px;
+}
+.main-section .book-mockup {
+  border: 1px solid #303030;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+.main-section .book-mockup:after {
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 5px;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  background: #AB4E47;
+  z-index: -1;
+}
+.main-section .book-mockup .tag {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 700;
+  letter-spacing: -1.3px;
+}
+.main-section .book-mockup .title {
+  font-size: 34px;
+  line-height: 38px;
+  font-weight: 400;
+  letter-spacing: -0.9px;
+  font-family: PlantinMTPro, serif;
+  margin: 16px 0 24px;
+  padding: 0 57px;
+}
+.main-section .book-cover {
+  width: 389px;
+  height: 520px;
+  margin-bottom: 100px;
+  margin-right: 115px;
+}
+.main-section .book-cover:nth-child(3n) {
+  margin-right: 0;
+}
+.main-section .book-cover:nth-child(2) {
+  margin-top: 258px;
+}
+.main-section .book-cover:nth-child(3n+4) {
+  margin-top: -258px;
+}
+.main-section .book-cover:nth-child(3n+6) {
+  margin-top: -258px;
+}
+.main-section .read-more {
+  margin-top: 258px;
+}
+
+@media (max-width: 1599px) {
+  .container {
+    padding: 0 30px;
+    max-width: 1520px;
+  }
+  .main-section .book-cover {
+    width: 339px;
+    height: 450px;
+    margin-bottom: 48px;
+    margin-right: 60px;
+  }
+  .main-section .read-more {
+    margin-top: 290px;
+  }
+}
+@media (max-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+  .btn {
+    padding: 8px 16px;
+    letter-spacing: 1px;
+  }
+  .main-section .row {
+    margin-top: -325px;
+  }
+  .main-section .main-title {
+    width: 275px;
+  }
+  .main-section .main-title h1 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .main-section .main-title h3 {
+    font-size: 14px;
+  }
+  .main-section .book-cover {
+    width: 275px;
+    margin-right: 50px;
+  }
+  .main-section .book-mockup .tag {
+    letter-spacing: 1px;
+  }
+  .main-section .book-mockup .title {
+    font-size: 21px;
+    line-height: 30px;
+  }
+  .main-section .read-more {
+    margin-top: 325px;
+  }
+}
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+  .main-section .row {
+    margin-top: -300px;
+    padding: 0 50px;
+  }
+  .main-section .main-title {
+    width: 250px;
+  }
+  .main-section .main-title h1 {
+    font-size: 28px;
+    line-height: 35px;
+  }
+  .main-section .main-title h3 {
+    font-size: 11px;
+  }
+  .main-section .main-title p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .main-section .book-cover {
+    width: 250px;
+    height: 360px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+  }
+  .main-section .book-mockup .title {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .main-section .read-more {
+    margin-top: 300px;
+  }
+  .main-section .btn {
+    font-size: 12px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+  .main-section {
+    margin: 50px 0;
+  }
+  .main-section .row {
+    padding: 0 10px;
+    margin-top: -280px;
+  }
+  .main-section .main-title {
+    width: 215px;
+  }
+  .main-section .main-title p {
+    font-size: 15px;
+  }
+  .main-section .book-cover {
+    width: 215px;
+    height: 360px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  .main-section .book-mockup .title {
+    padding: 0 36px;
+  }
+}
+@media (max-width: 768px) {
+  header .logo {
+    max-width: 125px;
+  }
+  header li:not(:last-child) {
+    margin-right: 5px;
+  }
+  .container {
+    max-width: 720px;
+  }
+  .main-section .main-title {
+    width: 100%;
+  }
+  .main-section .main-title h3 {
+    font-size: 13px;
+  }
+  .main-section .main-title p {
+    margin-bottom: 50px;
+  }
+  .main-section .row {
+    margin-top: 0;
+  }
+  .main-section .book-cover {
+    width: 223px;
+    margin-right: 0;
+  }
+  .main-section .book-cover:nth-child(2) {
+    margin-top: 0;
+  }
+  .main-section .book-cover:nth-child(3n+4) {
+    margin-top: 0;
+  }
+  .main-section .book-cover:nth-child(3n+6) {
+    margin-top: 0;
+  }
+  .main-section .book-cover:nth-child(odd) {
+    margin-right: 20px;
+  }
+  .main-section .book-cover:last-child {
+    margin-right: 0;
+  }
+  .main-section .read-more {
+    margin-top: 16px;
+  }
+}
+@media (max-width: 575px) {
+  header .logo {
+    max-width: 86px;
+  }
+  header li:not(:last-child) {
+    margin-right: 0;
+  }
+  header .search {
+    display: none;
+  }
+  header a {
+    font-size: 10px;
+  }
+  header a img {
+    width: 8px;
+  }
+  .container {
+    padding: 0 15px;
+    max-width: 540px;
+  }
+  .main-section {
+    margin: 30px 0;
+  }
+  .main-section .main-title h1 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .main-section .main-title p {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 24px;
+  }
+  .main-section .book-cover {
+    margin-right: 0;
+    width: 300px;
+  }
+  .main-section .book-cover img {
+    width: 100%;
+  }
+  .main-section .book-cover:nth-child(odd) {
+    margin-right: 0;
+  }
+  .btn {
+    line-height: 18px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

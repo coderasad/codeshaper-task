@@ -1,0 +1,25 @@
+/* BASE CSS */
+html {
+  scroll-behavior: smooth;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family : universLTStd, serif;
+  background  : #fff;
+  color       : $primary;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: 100%;
+}

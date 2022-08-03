@@ -1,0 +1,19 @@
+// ABSTRACTS
+@import 'abstract/variables';
+@import 'abstract/mixins';
+
+// BASE
+@import 'reset/base';
+@import 'reset/typography';
+@import 'abstract/common';
+
+// LAYOUT
+@import "layouts/header";
+
+// PAGES
+@import "pages/home";
+@import "pages/responsive";
+
+
+//SCSS BUILD COMMAND
+//sass assets/sass/app.scss assets/css/index.css --watch
